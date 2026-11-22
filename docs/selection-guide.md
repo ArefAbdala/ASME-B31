@@ -1,42 +1,43 @@
-# Choosing the right B31 section
+# Choosing which PDF to open
 
-Pick a section by what the piping carries and where it sits (a plant, a building, or a cross-country pipeline), not by pressure alone. First check whether a regulator or the owner's specification already names a section and an edition, because that overrides any rule of thumb.
-
-This guide is a starting point drawn from each section's published scope and common practice. Confirm the result against the scope chapter (para. 100.1, 300, 400.1 and so on) of the edition you use.
+The Introduction of B31.1-2007 makes the owner responsible for choosing the Code section that most nearly applies, and allows different sections for different parts of one installation. First check whether a regulator or the owner's specification already names a section and an edition, because that overrides everything below.
 
 ## Decision flow
 
-Ask the questions top to bottom and stop at the first yes.
+Ask the questions top to bottom and stop at the first yes. Solid boxes are free PDFs listed in the [PDF library](sections.md); dashed boxes have no free PDF.
 
 ```mermaid
 flowchart TD
     Q0{"Does a law or the owner's spec name a section?"} -- yes --> A0["Use that section and edition"]
     Q0 -- no --> Q1{"Hydrogen or hydrogen-mix service?"}
-    Q1 -- yes --> A1["B31.12 Hydrogen<br/>(hydrogen pipelines later move to B31.8)"]
+    Q1 -- yes --> A1["No free PDF: buy B31.12"]
     Q1 -- no --> Q2{"A pipeline, or its pump or compressor station?"}
-    Q2 -- yes --> A2["B31.4 if liquid or slurry<br/>B31.8 if gas"]
+    Q2 -- yes --> A2["B31.4-2002 if liquid<br/>B31.8-2003 if gas"]
     Q2 -- no --> Q3{"Refrigerant or coolant above 15 psi?"}
-    Q3 -- yes --> A3["B31.5 Refrigeration"]
+    Q3 -- yes --> A3["B31.5-2001 + 2004 addenda"]
     Q3 -- no --> Q4{"Building piping within B31.9 limits?"}
-    Q4 -- yes --> A4["B31.9 Building Services"]
+    Q4 -- yes --> A4["B31.9-2008"]
     Q4 -- no --> Q5{"Power plant, central heating or boiler external piping?"}
-    Q5 -- yes --> A5["B31.1 Power Piping"]
-    Q5 -- no --> A6["B31.3 Process Piping<br/>(everything else, mainly process plants)"]
+    Q5 -- yes --> A5["B31.1-2007 + 2008 and 2009 addenda"]
+    Q5 -- no --> A6["No free PDF: buy B31.3 Process Piping<br/>(everything else, mainly process plants)"]
+    classDef pdf fill:#e7f1fb,stroke:#2f6fd0,stroke-width:2px;
+    classDef nopdf fill:none,stroke:#999,stroke-dasharray:5 4;
+    class A2,A3,A4,A5 pdf;
+    class A1,A6 nopdf;
 ```
 
 A system that crosses a boundary, such as a pipeline entering a plant, gets a section on each side of the break point named in the design basis.
 
-## Where the sections meet
+## Where scopes meet
 
-Most hard cases sit at a property line or a facility type, and the Code makes the owner responsible for choosing the section where two could apply. Pressure and size limits marked "approx." are from memory, not from ASME's pages; check them in the edition you use.
+At each boundary, open the PDF named for each side. Limits for B31.9 are quoted from B31.9-2008, para. 900.1.2.
 
-| Boundary | Use the first when | Use the second when | Grey areas |
-| --- | --- | --- | --- |
-| B31.1 vs B31.3 | The facility makes power or central steam (power station, district heating plant, institutional boiler house) | The facility processes fluids (refinery, chemical, pharma, gas plant), including its own utility steam and water | Boiler external piping must follow B31.1 with BPVC Section I wherever the boiler sits. Cogeneration inside a process plant is often split by system, as the owner decides |
-| B31.4 vs B31.8 | The pipeline carries a liquid or slurry (crude, products, NGL, LPG, CO₂, ammonia) | The pipeline carries gas, including gathering lines, compressor stations and distribution | CO₂ and NGL are B31.4; gas with condensate is usually B31.8. US regulation (49 CFR 195 for liquids, 192 for gas) settles most cases |
-| Pipeline (B31.4 or B31.8) vs B31.3 | Piping is on the pipeline right-of-way, or in its pump, compressor, metering or regulating station | Piping is inside a refinery, process plant or gas processing plant | The break is usually the plant's isolation valve or property line, as set in the project basis |
-| B31.9 vs B31.1 | Building heating, cooling and utility piping that stays within B31.9's limits (approx. steam to 150 psig, liquids to 350 psig and 250°F; size and wall limits by material) | Above those limits, or a central plant serving several buildings | Boiler external piping above low-pressure boiler limits goes to B31.1 even in a building |
-| B31.5 vs B31.9 or B31.3 | The fluid is a refrigerant or secondary coolant above 15 psi | Chilled water and other water loops (B31.9 in buildings), or refrigeration that is part of a process (often B31.3) | Ammonia plants often use B31.5 for the refrigeration system and B31.3 for process ammonia |
-| B31.12 vs B31.3 or B31.8 | Any piping or pipeline in hydrogen service, unless a regulator or owner names another section | Hydrogen blended at low percentages into natural gas networks may stay under B31.8 with operator guidance | The new B31.8 hydrogen chapter, when published, will move hydrogen pipelines to B31.8 |
+| Boundary | Open this PDF when | Open the other when |
+| --- | --- | --- |
+| Buildings vs power | **B31.9-2008** for building piping within its limits: steam and condensate to 150 psig and 366°F, liquids to 350 psig and 250°F, compressed air and gas to 150 psig, minimum 0°F; carbon steel to NPS 48 and 0.50 in. wall, stainless to NPS 24 | **B31.1-2007** above any of those limits, or for a central plant serving several buildings. Boiler external piping follows the boundaries drawn in Fig. 900.1.2 of B31.9 and in B31.1 |
+| Liquid vs gas pipelines | **B31.4-2002** for predominantly liquid products, including CO₂ and anhydrous ammonia | **B31.8-2003** for predominantly gas, including gathering lines and compressor stations |
+| Pipeline vs plant | **B31.4-2002** or **B31.8-2003** for the line, its pump, compressor, regulating and metering stations, and terminals | Inside a refinery or process plant the scope belongs to B31.3, which has no free PDF |
+| Refrigeration vs buildings | **B31.5-2001** for refrigerant and secondary coolant piping | **B31.9-2008** for chilled water and other water loops in a building |
+| Gas pipeline integrity | **B31.8-2003** for design and construction | **B31.8S-2004** for the integrity management program, and **B31G-1991** to assess corroded pipe |
 
-Two checks override everything above: a law or regulator that names a section (for example US pipeline rules, state boiler laws, or Canadian provincial adoption through CSA B51), and the owner's design basis or contract.
+Fuel gas piping downstream of the meter is outside every PDF here; the B31.1-2007 Introduction points it to ANSI Z223.1 (NFPA 54), the National Fuel Gas Code.

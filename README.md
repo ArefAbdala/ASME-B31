@@ -1,30 +1,28 @@
 # ASME B31
 
-A practical guide to the ASME B31 Code for Pressure Piping: which sections exist, which edition is current, how to pick the right one, and where to get it legally.
-
-Current as of 22 November 2026. Editions and prices were checked against asme.org on that date.
+A guide to the ASME B31 Code for Pressure Piping, built around ten free PDFs of older editions published by Public.Resource.Org. It tells you which PDF covers your piping, and names another code only where no free PDF covers the scope.
 
 ## Contents
 
 | Page | What it answers |
 | --- | --- |
-| [Sections and editions](docs/sections.md) | The seven construction sections, their current editions, and what each covers |
-| [Selection guide](docs/selection-guide.md) | A decision flow and the boundaries between sections (B31.1 vs B31.3, B31.4 vs B31.8, B31.9 vs B31.1, and more) |
-| [Companion standards](docs/companion-standards.md) | B31.8S, B31Q, B31T, B31G, B31J, B31P and B31E, plus the withdrawn B31.2 and B31.11 |
-| [Where to get them](docs/sources.md) | Official asme.org pages, list prices, and legitimate free access |
+| [PDF library](docs/sections.md) | Which PDF covers which scope, and the scopes no free PDF covers |
+| [Selection guide](docs/selection-guide.md) | A decision flow to the right PDF, and which PDF to open at each boundary |
+| [Companion standards](docs/companion-standards.md) | B31.8S and B31G, plus the withdrawn B31.2 and B31.11 |
+| [Sources](docs/sources.md) | Where each PDF comes from, and the newer editions |
 
 ## At a glance
 
-| Section | Title | Current edition |
-| --- | --- | --- |
-| B31.1 | Power Piping | 2026 |
-| B31.3 | Process Piping | 2024 |
-| B31.4 | Pipeline Transportation Systems for Liquids and Slurries | 2025 |
-| B31.5 | Refrigeration Piping and Heat Transfer Components | 2022 |
-| B31.8 | Gas Transmission and Distribution Piping Systems | 2025 |
-| B31.9 | Building Services Piping | 2025 |
-| B31.12 | Hydrogen Piping and Pipelines | 2023 |
+| Scope | Free PDF |
+| --- | --- |
+| Power and central heating | B31.1-2007, with 2008 and 2009 addenda |
+| Liquid pipelines | B31.4-2002 |
+| Refrigeration | B31.5-2001, with 2004 addenda |
+| Gas pipelines and distribution | B31.8-2003, B31.8S-2004, B31G-1991 |
+| Buildings | B31.9-2008 |
+| Process plants | none: buy B31.3 |
+| Hydrogen | none: buy B31.12 |
 
 ## Caveats
 
-This repository summarizes scope and selection for orientation only. It does not reproduce Code text, and it is not a substitute for the Code or for the judgment of a qualified engineer. Always confirm against the edition your jurisdiction or contract requires.
+These are older editions, good for learning the Code and choosing a section. For design or compliance work, use the edition your jurisdiction or contract requires. This repository does not reproduce Code text, and it is not a substitute for the Code or for a qualified engineer.
