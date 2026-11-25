@@ -1,0 +1,90 @@
+site_name: ASME B31 Study Guide
+site_url: https://arefabdala.github.io/ASME-B31/
+site_description: A study guide to the ASME B31 Code for Pressure Piping, built around the free Public.Resource.Org PDFs of older editions.
+repo_url: https://github.com/ArefAbdala/ASME-B31
+repo_name: ArefAbdala/ASME-B31
+edit_uri: edit/main/docs/
+docs_dir: docs
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - toc.follow
+  icon:
+    logo: material/pipe
+
+extra_css:
+  - assets/extra.css
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - assets/mobile.js
+  - assets/mathjax-config.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js
+
+nav:
+  - Home: index.md
+  - Find your section:
+      - PDF library: sections.md
+      - Selection guide: selection-guide.md
+      - Companion standards: companion-standards.md
+      - Sources: sources.md
+  - Study:
+      - study/index.md
+      - How the Code is organized: study/structure.md
+      - B31.1 Power Piping: study/b31-1.md
+      - B31.4 Liquid Pipelines: study/b31-4.md
+      - B31.5 Refrigeration: study/b31-5.md
+      - B31.8 Gas Pipelines: study/b31-8.md
+      - B31.8S and B31G Integrity: study/b31-8s-b31g.md
+      - B31.9 Building Services: study/b31-9.md
+      - B31.3 and B31.12 (no free PDF): study/b31-3-b31-12.md
+  - Practice:
+      - Which section? Scenario quiz: study/scenarios.md
+      - Glossary: study/glossary.md
+  - About: about.md

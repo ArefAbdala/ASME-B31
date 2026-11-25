@@ -2,6 +2,10 @@
 
 A guide to the ASME B31 Code for Pressure Piping, built around ten free PDFs of older editions published by Public.Resource.Org. It tells you which PDF covers your piping, and names another code only where no free PDF covers the scope.
 
+## Study website
+
+The guide is also published as a study website with reading maps that open each PDF at the right page, plain-language notes, worked examples and self-check questions: **https://arefabdala.github.io/ASME-B31/** (deployed by GitHub Actions from `main`; see `.github/workflows/pages.yml`). To preview it locally, run `pip install -r requirements.txt` and then `mkdocs serve`.
+
 ## Contents
 
 | Page | What it answers |
