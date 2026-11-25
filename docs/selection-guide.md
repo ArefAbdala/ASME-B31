@@ -26,6 +26,17 @@ flowchart TD
     class A1,A6 nopdf;
 ```
 
+??? info "The same flow as a list (easier on a phone or with a screen reader)"
+    Stop at the first question you answer yes to.
+
+    1. **Does a law or the owner's specification name a section?** Use that section and edition.
+    2. **Hydrogen or hydrogen-mix service?** No free PDF: buy B31.12.
+    3. **A pipeline, or its pump or compressor station?** [B31.4-2002](https://law.resource.org/pub/us/cfr/ibr/002/asme.b31.4.2002.pdf) if liquid, [B31.8-2003](https://law.resource.org/pub/us/cfr/ibr/002/asme.b31.8.2003.pdf) if gas.
+    4. **Refrigerant or coolant above 15 psi?** [B31.5-2001](https://archive.org/details/gov.law.asme.b31.5.2001) with its 2004 addenda.
+    5. **Building piping within B31.9 limits?** [B31.9-2008](https://archive.org/details/gov.law.asme.b31.9.2008).
+    6. **Power plant, central heating or boiler external piping?** [B31.1-2007](https://archive.org/details/gov.law.asme.b31.1.2007) with its 2008 and 2009 addenda.
+    7. **None of the above** (mainly process plants): no free PDF, buy B31.3 Process Piping.
+
 A system that crosses a boundary, such as a pipeline entering a plant, gets a section on each side of the break point named in the design basis.
 
 ## Where scopes meet

@@ -1,4 +1,75 @@
-/* Small "PDF p." badge used in reading maps */
+/* Reading-map page links */
 .md-typeset a.pdfpage { white-space: nowrap; font-variant-numeric: tabular-nums; }
 .md-typeset table:not([class]) td { vertical-align: top; }
-.md-typeset .grid-cards-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); gap: .8rem; }
+
+/* Comfortable tap targets for links inside tables (WCAG 2.2 target size) */
+.md-typeset table:not([class]) a { display: inline-block; padding: .3rem 0; }
+
+.md-typeset .b31-swipe { display: none; }
+
+@media screen and (max-width: 600px) {
+  /* Smaller, tighter page titles so content starts above the fold */
+  .md-typeset h1 { font-size: 1.6em; margin-bottom: .8em; line-height: 1.25; }
+  .md-typeset h2 { font-size: 1.35em; }
+
+  /* Tables become one card per row, with each cell labelled by its column header */
+  .md-typeset .md-typeset__scrollwrap { margin: 1em 0; overflow-x: visible; }
+  .md-typeset .md-typeset__table { display: block; padding: 0; }
+  .md-typeset table[data-cards] {
+    display: block; border: 0; box-shadow: none; background: none; font-size: .75rem;
+  }
+  .md-typeset table[data-cards] thead {
+    position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap;
+  }
+  .md-typeset table[data-cards] tbody,
+  .md-typeset table[data-cards] tr { display: block; }
+  .md-typeset table[data-cards] tr {
+    margin: 0 0 .8rem; padding: .6rem .8rem;
+    border: .05rem solid var(--md-default-fg-color--lightest); border-radius: .3rem;
+    background: var(--md-default-bg-color);
+  }
+  .md-typeset table[data-cards] tbody tr:hover { box-shadow: none; }
+  .md-typeset table[data-cards] td {
+    display: block; border: 0; padding: .2rem 0; overflow-wrap: anywhere;
+  }
+  .md-typeset table[data-cards] td[data-empty] { display: none; }
+  .md-typeset table[data-cards] td::before {
+    content: attr(data-label); display: block;
+    font-size: .6rem; font-weight: 700; letter-spacing: .02em; text-transform: uppercase;
+    color: var(--md-default-fg-color--light);
+  }
+  /* Compact cards: label and short value on one line */
+  .md-typeset table[data-cards][data-compact] td:not(:first-child) {
+    display: flex; justify-content: space-between; gap: 1rem; padding: .15rem 0;
+    border-top: .05rem solid var(--md-default-fg-color--lightest);
+  }
+  .md-typeset table[data-cards][data-compact] td:not(:first-child)::before { display: inline; font-size: .65rem; }
+
+  /* The first column is the row's title */
+  .md-typeset table[data-cards] td:first-child { font-size: .85rem; font-weight: 700; padding-bottom: .3rem; }
+  .md-typeset table[data-cards] td:first-child:not([data-short])::before { display: none; }
+
+  /* Reading-map links become full-size buttons */
+  .md-typeset table[data-cards] a.pdfpage {
+    display: inline-flex; align-items: center; min-height: 2.2rem; margin-top: .2rem; padding: 0 .9rem;
+    border-radius: .2rem; background: var(--md-primary-fg-color); color: var(--md-primary-bg-color);
+    font-weight: 700;
+  }
+  .md-typeset table[data-cards] a.pdfpage::after { content: " \2197"; margin-left: .3em; }
+
+  /* Flowcharts: keep the text readable and let the chart scroll sideways */
+  .md-typeset .b31-mermaid-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 0 -.8rem; padding: 0 .8rem; }
+  .md-typeset .b31-mermaid-scroll > .mermaid { width: 760px; margin: 0; }
+  .md-typeset .b31-swipe { display: block; font-size: .7rem; color: var(--md-default-fg-color--light); margin-bottom: .2rem; }
+
+  /* Long equations scroll instead of overflowing */
+  .md-typeset div.arithmatex { overflow-x: auto; }
+
+  /* Bigger tap area for question toggles */
+  .md-typeset details > summary { padding-top: .6rem; padding-bottom: .6rem; }
+}
+
+@media screen and (max-width: 600px) {
+  /* Slightly smaller display equations so most fit a phone without scrolling */
+  .md-typeset div.arithmatex mjx-container[display="true"] { font-size: 92% !important; }
+}
