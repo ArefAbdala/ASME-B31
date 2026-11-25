@@ -64,6 +64,7 @@ markdown_extensions:
 
 extra_javascript:
   - assets/mobile.js
+  - assets/progress.js
   - assets/mathjax-config.js
   - https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js
 
