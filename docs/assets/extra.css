@@ -73,3 +73,7 @@
   /* Slightly smaller display equations so most fit a phone without scrolling */
   .md-typeset div.arithmatex mjx-container[display="true"] { font-size: 92% !important; }
 }
+
+/* Study-plan checkboxes are interactive */
+.md-typeset .task-list-control { cursor: pointer; }
+.md-typeset .b31-progress-note { font-size: .7rem; color: var(--md-default-fg-color--light); margin-top: -.4rem; }
