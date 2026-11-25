@@ -34,4 +34,4 @@ Each section page has the same five parts:
 | B31.8 Gas Pipelines | 2003 | [Study B31.8](b31-8.md) |
 | B31.8S Integrity, B31G Corrosion | 2004, 1991 | [Study B31.8S and B31G](b31-8s-b31g.md) |
 | B31.9 Building Services | 2008 | [Study B31.9](b31-9.md) |
-| B31.3 Process, B31.12 Hydrogen | none | [What to do without a PDF](b31-3-b31-12.md) |
+| B31.3 Process, B31.12 Hydrogen | [B31.3-2020](https://archive.org/details/pub.cfr.asme.b31.03.2020) (Internet Archive); none for B31.12 | [B31.3 and B31.12](b31-3-b31-12.md) |

@@ -1,6 +1,6 @@
 # Where the PDFs come from
 
-All ten PDFs are published by Public.Resource.Org, on [law.resource.org](https://law.resource.org/pub/us/cfr/ibr/002/) and in its [Internet Archive collection](https://archive.org/details/publicsafetycode). It posts standards that US regulations incorporate by reference, for example [49 CFR 192 and 195](https://www.ecfr.gov/current/title-49/subtitle-B/chapter-I/subchapter-D/part-195/subpart-A/section-195.3) for pipelines. Public Resource has no ASME B31.3 or B31.12.
+All ten PDFs are published by Public.Resource.Org, on [law.resource.org](https://law.resource.org/pub/us/cfr/ibr/002/) and in its [Internet Archive collection](https://archive.org/details/publicsafetycode). It posts standards that US regulations incorporate by reference, for example [49 CFR 192 and 195](https://www.ecfr.gov/current/title-49/subtitle-B/chapter-I/subchapter-D/part-195/subpart-A/section-195.3) for pipelines. Copies of the ten PDFs are hosted on this site under `pdfs/`, byte for byte the same files as the sources below, so the page links in the reading maps keep working. Public Resource also posts [ASME B31.3-2020 Process Piping](https://archive.org/details/pub.cfr.asme.b31.03.2020), incorporated by reference in 33 CFR 127.003; at 437 MB it is over GitHub's 100 MB file limit, so this site links to it rather than hosting it. Public Resource has no B31.12.
 
 | File | Edition | Source |
 | --- | --- | --- |

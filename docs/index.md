@@ -58,6 +58,6 @@ A study companion for the **ASME B31 Code for Pressure Piping**. It is built aro
 | Gas pipelines and distribution | [B31.8 Gas Pipelines](study/b31-8.md) | B31.8-2003 |
 | Gas pipeline integrity and corrosion | [B31.8S and B31G](study/b31-8s-b31g.md) | B31.8S-2004, B31G-1991 |
 | Building services | [B31.9 Building Services](study/b31-9.md) | B31.9-2008 |
-| Process plants, hydrogen | [B31.3 and B31.12](study/b31-3-b31-12.md) | No free PDF |
+| Process plants, hydrogen | [B31.3 and B31.12](study/b31-3-b31-12.md) | B31.3-2020 ([Internet Archive](https://archive.org/details/pub.cfr.asme.b31.03.2020)); no free B31.12 |
 
 This site summarizes and points into the Code. It does not reproduce Code text, and it is not a substitute for the Code or for a qualified engineer.

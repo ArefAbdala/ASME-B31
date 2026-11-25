@@ -24,7 +24,7 @@ The guide is also published as a study website with reading maps that open each 
 | Refrigeration | B31.5-2001, with 2004 addenda |
 | Gas pipelines and distribution | B31.8-2003, B31.8S-2004, B31G-1991 |
 | Buildings | B31.9-2008 |
-| Process plants | none: buy B31.3 |
+| Process plants | B31.3-2020 (on the Internet Archive; too large to host here) |
 | Hydrogen | none: buy B31.12 |
 
 ## Caveats

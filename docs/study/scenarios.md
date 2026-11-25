@@ -6,7 +6,7 @@ For each system, decide which B31 section applies and which free PDF you would o
     **B31.1** ([study page](b31-1.md)). The piping from the boiler to its first stop valve is boiler external piping under Section I jurisdiction; beyond it, B31.1 alone.
 
 ??? question "2. A 30-mile, 20-in. crude oil line from a tank farm to a refinery."
-    **B31.4** up to the refinery boundary ([study page](b31-4.md)). Inside the refinery, B31.3, which has no free PDF.
+    **B31.4** up to the refinery boundary ([study page](b31-4.md)). Inside the refinery, B31.3 ([free 2020 edition](https://archive.org/details/pub.cfr.asme.b31.03.2020)).
 
 ??? question "3. Natural gas service line from the street main to a house meter."
     **B31.8** ([study page](b31-8.md)). B31.8 covers distribution mains and service lines up to the outlet of the customer's meter set assembly. Beyond the meter, the National Fuel Gas Code.
@@ -18,7 +18,7 @@ For each system, decide which B31 section applies and which free PDF you would o
     **B31.5** ([study page](b31-5.md)). Refrigerant piping above 15 psig.
 
 ??? question "6. Piping that moves sulfuric acid between tanks in a chemical plant."
-    **B31.3** Process Piping. No free PDF covers it; see [B31.3 and B31.12](b31-3-b31-12.md).
+    **B31.3** Process Piping. Read the free [2020 edition](https://archive.org/details/pub.cfr.asme.b31.03.2020); see [B31.3 and B31.12](b31-3-b31-12.md).
 
 ??? question "7. Hot water heating at 300°F and 200 psig in a hospital."
     **B31.1**. B31.9 limits nonflammable liquids to 250°F, so 300°F is outside it.

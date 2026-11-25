@@ -4,8 +4,8 @@ Two companion standards have free PDFs, and both support gas and liquid pipeline
 
 | Standard | Edition | Use with |
 | --- | --- | --- |
-| [ASME B31.8S Managing System Integrity of Gas Pipelines](https://law.resource.org/pub/us/cfr/ibr/002/asme.b31.8s.2004.pdf) | 2004 | B31.8-2003: integrity management programs for onshore gas pipelines |
-| [ASME B31G Manual for Determining the Remaining Strength of Corroded Pipelines](https://law.resource.org/pub/us/cfr/ibr/002/asme.b31g.1991.pdf) | 1991 | B31.4-2002 and B31.8-2003: remaining strength of corroded pipe |
+| [ASME B31.8S Managing System Integrity of Gas Pipelines](pdfs/asme.b31.8s.2004.pdf) | 2004 | B31.8-2003: integrity management programs for onshore gas pipelines |
+| [ASME B31G Manual for Determining the Remaining Strength of Corroded Pipelines](pdfs/asme.b31g.1991.pdf) | 1991 | B31.4-2002 and B31.8-2003: remaining strength of corroded pipe |
 
 Other companion standards (B31J, B31P, B31T, B31E) have no free PDF. For study, each PDF in the library carries its own rules on flexibility, heat treatment and toughness, so you do not need them to follow the base Code.
 

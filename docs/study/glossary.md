@@ -12,7 +12,7 @@ Boiler external piping (BEP)
 :   Piping from a power boiler to the first stop valve (or valves) of its connected systems. Designed to B31.1 under ASME Section I jurisdiction. B31.1 Fig. 100.1.2, para. 122.1.
 
 Category D, Category M
-:   B31.3 fluid service categories: D for nonflammable, nontoxic fluids at low pressure and temperature; M for toxic fluids where a small exposure can cause serious harm. B31.3 only (no free PDF).
+:   B31.3 fluid service categories: D for nonflammable, nontoxic fluids at low pressure and temperature; M for toxic fluids where a small exposure can cause serious harm. B31.3 only.
 
 Cathodic protection
 :   Electrical protection of buried or submerged steel against corrosion, using sacrificial anodes or impressed current. B31.4 Chapter VIII; B31.8 Chapter VI and Appendix K.
