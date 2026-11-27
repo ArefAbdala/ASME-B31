@@ -12,28 +12,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: sudo apt-get update -q && sudo apt-get install -y -q poppler-utils
-      - name: Download, verify, extract
+            - name: Fetch per-page OCR text
         run: |
           set -euo pipefail
-          mkdir -p extract
+          rm -f extract/*.txt.gz
           for id in b31.01.2016 b31.03.2020 b31.04.2016 b31.05.2016 b31.08.2016 b31.09.2014 b31g.2012; do
             item=pub.cfr.asme.$id
-            curl -sSfL --retry 4 -o /tmp/$id.pdf "https://archive.org/download/$item/asme.$id.pdf"
-            curl -sSfL --retry 4 -o extract/$id.page_numbers.json "https://archive.org/download/$item/asme.${id}_page_numbers.json"
-            want=$(curl -sSf "https://archive.org/metadata/$item/files" | python3 -c "import json,sys;print([f['md5'] for f in json.load(sys.stdin)['result'] if f['name']=='asme.$id.pdf'][0])")
-            got=$(md5sum /tmp/$id.pdf | cut -d' ' -f1)
-            echo "$id size=$(stat -c%s /tmp/$id.pdf) md5=$got want=$want pages=$(pdfinfo /tmp/$id.pdf | awk '/^Pages/{print $2}')" | tee -a extract/summary.txt
-            [ "$got" = "$want" ]
-            pdftotext -layout /tmp/$id.pdf extract/$id.txt
-            gzip -9 extract/$id.txt
-            if [ "$(stat -c%s /tmp/$id.pdf)" -lt 95000000 ]; then cp /tmp/$id.pdf docs/pdfs/asme.$id.pdf; fi
-            rm /tmp/$id.pdf
+            curl -sSfL --retry 4 -o extract/$id.searchtext.txt.gz "https://archive.org/download/$item/asme.${id}_hocr_searchtext.txt.gz"
+            curl -sSfL --retry 4 -o extract/$id.pageindex.json.gz "https://archive.org/download/$item/asme.${id}_hocr_pageindex.json.gz"
           done
+          ls -l extract
       - name: Commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add extract docs/pdfs
-          git commit -m "Add newer-edition PDFs under 95 MB and extracted page text (temporary)"
+          git add -A extract
+          git commit -m "Add per-page OCR text of the newer editions (temporary)"
           git push
