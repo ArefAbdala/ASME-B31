@@ -1,23 +1,23 @@
 # Where the PDFs come from
 
-All ten PDFs are published by Public.Resource.Org, on [law.resource.org](https://law.resource.org/pub/us/cfr/ibr/002/) and in its [Internet Archive collection](https://archive.org/details/publicsafetycode). It posts standards that US regulations incorporate by reference, for example [49 CFR 192 and 195](https://www.ecfr.gov/current/title-49/subtitle-B/chapter-I/subchapter-D/part-195/subpart-A/section-195.3) for pipelines. Copies of the ten PDFs are hosted on this site under `pdfs/`, byte for byte the same files as the sources below, so the page links in the reading maps keep working. Public Resource also posts [ASME B31.3-2020 Process Piping](https://archive.org/details/pub.cfr.asme.b31.03.2020), incorporated by reference in 33 CFR 127.003; at 437 MB it is over GitHub's 100 MB file limit, so this site links to it rather than hosting it. Public Resource has no B31.12.
+All eight PDFs are published by Public.Resource.Org in its [Internet Archive collection](https://archive.org/details/publicsafetycode) (B31.8S also on [law.resource.org](https://law.resource.org/pub/us/cfr/ibr/002/)). It posts standards that US regulations incorporate by reference. Four are hosted on this site under `pdfs/`, byte for byte the same files as the sources below; the other four are over GitHub's 100 MB file limit, so the site links to them on the Internet Archive.
 
-| File | Edition | Source |
-| --- | --- | --- |
-| ASME B31.1 Power Piping | 2007 | [archive.org](https://archive.org/details/gov.law.asme.b31.1.2007) |
-| ASME B31.1a Addenda | 2008 | [archive.org](https://archive.org/details/gov.law.asme.b31.1a.2008) |
-| ASME B31.1b Addenda | 2009 | [archive.org](https://archive.org/details/gov.law.asme.b31.1b.2009) |
-| ASME B31.4 Liquid Pipelines | 2002 | [law.resource.org](https://law.resource.org/pub/us/cfr/ibr/002/asme.b31.4.2002.pdf) |
-| ASME B31.5 Refrigeration Piping | 2001 | [archive.org](https://archive.org/details/gov.law.asme.b31.5.2001) |
-| ASME B31.5a Addenda | 2004 | [archive.org](https://archive.org/details/gov.law.asme.b31.5a.2004) |
-| ASME B31.8 Gas Transmission and Distribution | 2003 | [law.resource.org](https://law.resource.org/pub/us/cfr/ibr/002/asme.b31.8.2003.pdf) |
-| ASME B31.8S Gas Pipeline Integrity | 2004 | [law.resource.org](https://law.resource.org/pub/us/cfr/ibr/002/asme.b31.8s.2004.pdf) |
-| ASME B31.9 Building Services Piping | 2008 | [archive.org](https://archive.org/details/gov.law.asme.b31.9.2008) |
-| ASME B31G Corroded Pipelines | 1991 | [law.resource.org](https://law.resource.org/pub/us/cfr/ibr/002/asme.b31g.1991.pdf) |
+| File | Edition | Incorporated by reference in | Size | On this site | Source |
+| --- | --- | --- | --- | --- | --- |
+| ASME B31.1 Power Piping | 2016 | 46 CFR 56.01-2 | 326 MB | no | [archive.org](https://archive.org/details/pub.cfr.asme.b31.01.2016) |
+| ASME B31.3 Process Piping | 2020 | 33 CFR 127.003 | 437 MB | no | [archive.org](https://archive.org/details/pub.cfr.asme.b31.03.2020) |
+| ASME B31.4 Liquids and Slurries | 2016 | 10 CFR 851.27 | 158 MB | no | [archive.org](https://archive.org/details/pub.cfr.asme.b31.04.2016) |
+| ASME B31.5 Refrigeration Piping | 2016 | 10 CFR 851.27 | 91 MB | [yes](pdfs/asme.b31.05.2016.pdf) | [archive.org](https://archive.org/details/pub.cfr.asme.b31.05.2016) |
+| ASME B31.8 Gas Transmission and Distribution | 2016 | 10 CFR 851.27 | 246 MB | no | [archive.org](https://archive.org/details/pub.cfr.asme.b31.08.2016) |
+| ASME B31.8S Gas Pipeline Integrity | 2004 | 49 CFR 192 | 8 MB | [yes](pdfs/asme.b31.8s.2004.pdf) | [law.resource.org](https://law.resource.org/pub/us/cfr/ibr/002/asme.b31.8s.2004.pdf) |
+| ASME B31.9 Building Services Piping | 2014 | 10 CFR 851.27 | 78 MB | [yes](pdfs/asme.b31.09.2014.pdf) | [archive.org](https://archive.org/details/pub.cfr.asme.b31.09.2014) |
+| ASME B31G Corroded Pipelines | 2012 | 10 CFR 851.27 | 39 MB | [yes](pdfs/asme.b31g.2012.pdf) | [archive.org](https://archive.org/details/pub.cfr.asme.b31g.2012) |
+
+Public Resource has no B31.12, and no B31.8S newer than 2004. It also posts the older editions this guide used before (B31.1-2007, B31.4-2002, B31.5-2001, B31.8-2003, B31.9-2008, B31G-1991) in its [collection](https://archive.org/details/publicsafetycode).
 
 ## Newer editions
 
-Each PDF has a newer edition. These were the current editions on asme.org on 22 November 2026, with list prices:
+Each free PDF has a newer edition. These were the current editions on asme.org on 22 November 2026, with list prices:
 
 | Standard | Current edition | List price (USD) |
 | --- | --- | --- |

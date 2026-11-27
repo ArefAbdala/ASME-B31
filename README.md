@@ -1,6 +1,6 @@
 # ASME B31
 
-A guide to the ASME B31 Code for Pressure Piping, built around ten free PDFs of older editions published by Public.Resource.Org. It tells you which PDF covers your piping, and names another code only where no free PDF covers the scope.
+A guide to the ASME B31 Code for Pressure Piping, built around eight free PDFs of B31 editions (2004 to 2020) published by Public.Resource.Org. It tells you which PDF covers your piping, and names another code only where no free PDF covers the scope.
 
 ## Study website
 
@@ -19,12 +19,12 @@ The guide is also published as a study website with reading maps that open each 
 
 | Scope | Free PDF |
 | --- | --- |
-| Power and central heating | B31.1-2007, with 2008 and 2009 addenda |
-| Liquid pipelines | B31.4-2002 |
-| Refrigeration | B31.5-2001, with 2004 addenda |
-| Gas pipelines and distribution | B31.8-2003, B31.8S-2004, B31G-1991 |
-| Buildings | B31.9-2008 |
-| Process plants | B31.3-2020 (on the Internet Archive; too large to host here) |
+| Power and central heating | B31.1-2016 |
+| Liquid and slurry pipelines | B31.4-2016 |
+| Refrigeration | B31.5-2016 |
+| Gas pipelines and distribution | B31.8-2016, B31.8S-2004, B31G-2012 |
+| Buildings | B31.9-2014 |
+| Process plants | B31.3-2020 |
 | Hydrogen | none: buy B31.12 |
 
 ## Caveats
